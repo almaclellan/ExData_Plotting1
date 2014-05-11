@@ -122,7 +122,7 @@ legend(1, c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"),
 
 
 plot(powerConsumption$Global_reactive_power, 
-     type="h",
+     type="l",
      axes=FALSE,
      ann=FALSE)
 axis(1, at=minutes, lab=days)
