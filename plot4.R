@@ -64,7 +64,7 @@ rangeOfGAP <- range(powerConsumption$Global_active_power)
 rangeOfV <- range(powerConsumption$Voltage)
 
 #
-# Create the 
+# Create the plot
 #
 
 png(filename = "plot4.png",
@@ -114,7 +114,7 @@ legend(1, c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"),
        x="topright",
        col=c("black","red","blue"),
        lty=c(1,1,1),
-       cex=.6)
+       cex=.6, bty="n")
 
 # Create lower right plot
 
