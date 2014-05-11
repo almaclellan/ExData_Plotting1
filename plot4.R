@@ -76,6 +76,7 @@ png(filename = "plot4.png",
 par(mfrow=c(2,2))
 
 # Create upper left plot
+# uses the same code from Plot 1
 
 plot(powerConsumption$Global_active_power, 
      type="l",
@@ -98,6 +99,7 @@ box()
 title(ylab="Voltage", xlab="datetime")
 
 # create lower left plot
+# uses the same code from plot 3
 
 plot(powerConsumption$Sub_metering_1,
      col="black",
