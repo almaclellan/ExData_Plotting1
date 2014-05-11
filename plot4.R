@@ -76,14 +76,14 @@ png(filename = "plot4.png",
 par(mfrow=c(2,2))
 
 # Create upper left plot
-# uses the same code from Plot 1
+# uses the same code from Plot 2
 
 plot(powerConsumption$Global_active_power, 
      type="l",
      axes=FALSE,
      ann=FALSE)
 axis(1, at=minutes, lab=days)
-axis(2, las=1, at=2*0:rangeOfGAP[2])
+axis(2, las=0, at=2*0:rangeOfGAP[2])
 box()
 title(ylab="Global Active Power (kilowatts)")
 
@@ -94,7 +94,7 @@ plot(powerConsumption$Voltage,
      axes=FALSE,
      ann=FALSE)
 axis(1, at=minutes, lab=days)
-axis(2, las=1, at=c(234,238,242,246))
+axis(2, las=0, at=c(234,238,242,246))
 box()
 title(ylab="Voltage", xlab="datetime")
 
@@ -109,7 +109,7 @@ plot(powerConsumption$Sub_metering_1,
 lines(powerConsumption$Sub_metering_2, type="l", col="red")
 lines(powerConsumption$Sub_metering_3, type="l", col="blue")
 axis(1, at=minutes, lab=days)
-axis(2, las=1, at=10*0:rangeOfPC[2])
+axis(2, las=0, at=10*0:rangeOfPC[2])
 box()
 title(ylab="Energy sub metering")
 legend(1, c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"),
@@ -126,7 +126,7 @@ plot(powerConsumption$Global_reactive_power,
      axes=FALSE,
      ann=FALSE)
 axis(1, at=minutes, lab=days)
-axis(2, las=1, at=c(0.0,0.1,0.2,0.3,0.4,0.5))
+axis(2, las=0, at=c(0.0,0.1,0.2,0.3,0.4,0.5))
 box()
 title(ylab="Global_reactive_power", xlab="datetime")
 

@@ -89,7 +89,7 @@ lines(powerConsumption$Sub_metering_3, type="l", col="blue")
 axis(1, at=minutes, lab=days)
 
 # Left veritical Axis
-axis(2, las=1, at=10*0:rangeOfPC[2])
+axis(2, las=0, at=10*0:rangeOfPC[2])
 
 # Create box around plot
 box()

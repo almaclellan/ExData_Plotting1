@@ -75,7 +75,7 @@ plot(powerConsumption$Global_active_power,
 axis(1, at=c(0,1440,2880), lab=days)
 
 # Left veritical Axis
-axis(2, las=1, at=2*0:rangeOfGAP[2])
+axis(2, las=0, at=2*0:rangeOfGAP[2])
 
 # Create box around plot
 box()
